@@ -2,14 +2,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inspiration', cursive;
     font-family: 'IBM Plex Sans Thai', sans-serif;
+    
 }
 
-
-:root{
-    --fontPrincipal: font-family: 'Inspiration', cursive;
+header{
+    display: flex;
+    align-items: center;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    background-color: rgb(80, 33, 33);
 }
 
-a{
-    font-family: var(--fontPrincipal);
+.logo img{
+    width: 152px;
+    height: 44px;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+.navlist ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navlist a {
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Khula';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 77px;
+    color: #FFFFFF;
 }
