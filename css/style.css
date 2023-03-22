@@ -2,5 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+
+:root{
+    --fontPrincipal: font-family: 'Inspiration', cursive;
+}
+
+a{
+    font-family: var(--fontPrincipal);
 }
