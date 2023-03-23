@@ -202,6 +202,10 @@ main {
   cursor: pointer;
 }
 
+.buttons-principal i{
+  padding-right: 10px;
+}
+
 .buttons-principal button:hover {
   background: rgba(124, 124, 124, 0.8);
 }
