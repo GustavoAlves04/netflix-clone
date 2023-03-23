@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Netflix | Clone</title>
 </head>
 
@@ -54,133 +55,202 @@
 
     <main>
         <div class="principal">
-
-            <div class="img-principal">
-                <img src="./img/banner.png" alt="">
-            </div>
-            <div class="buttons-principal">
-                <button><i class='fas fa-play'></i> Assistir</button>
-                <button><i class='fas fa-plus'></i> Minha Lista</button>
-            </div>
-            <div class="container">
-                <div class="texth1">
-                    <h1>A Escola do Bem e do Mal</h1>
+            <div class="container-total">
+                <div class="img-principal">
+                    <img src="./img/banner.png" alt="">
                 </div>
-                <div class="spans">
-                    <span class="spans-container">2022</span>
-                    <span class="span-vazio"></span>
-                    <span class="span-border">14</span>
-                    <span class="span-vazio"></span>
-                    <span class="spans-container">2h 29min</span>
-                    <span class="span-vazio"></span>
-                    <span class="spans-container">Filmes para a família</span>
+                <div class="buttons-principal">
+                    <button><i class='fas fa-play'></i> Assistir</button>
+                    <button><i class='fas fa-plus'></i> Minha Lista</button>
                 </div>
-                <div class="paragrafo">
-                    <p class="descricao">Sophie e Agatha são grandes amigas. Mas será que essa amizade vai resistir
-                        dentro de uma escola
-                        mágica que treina heróis e vilões?
-                    </p>
-                    <div class="simples">
-                        <p class="estrelado">Estrelando:</p>
-                        <p class="pessoas">Sophia Anne Caruso,Sofia Wylie,Charlize Theron</p>
+                <div class="container">
+                    <div class="texth1">
+                        <h1>A Escola do Bem e do Mal</h1>
                     </div>
-                </div>
-            </div>
-
-            <div class="lista-filmes">
-                <span>Populares na Netflix</span>
-                <div class="posters">
-                    <div class="movies">
-                        <img src="./img/card1.jpg" alt="">
+                    <div class="spans">
+                        <span class="spans-container">2022</span>
+                        <span class="span-vazio">|</span>
+                        <span class="span-border">14</span>
+                        <span class="span-vazio">|</span>
+                        <span class="spans-container">2h 29min</span>
+                        <span class="span-vazio">|</span>
+                        <span class="spans-container">Filmes para a família</span>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card2.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card3.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card4.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card5.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card6.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card7.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card8.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card9.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card10.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card11.jpg" alt="">
-                    </div>
-                    <div class="movies">
-                        <img src="./img/card12.jpg" alt="">
+                    <div class="paragrafo">
+                        <p class="descricao">Sophie e Agatha são grandes amigas. Mas será que essa amizade vai resistir
+                            dentro de uma escola
+                            mágica que treina heróis e vilões?
+                        </p>
+                        <div class="simples">
+                            <p class="estrelado">Estrelando:</p>
+                            <p class="pessoas">Sophia Anne Caruso,Sofia Wylie,Charlize Theron</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="lista-filmes">
-                <span>Em alta</span>
-                <div class="posters">
-                    <div class="movies">
-                        <img src="./img/card13.jpg" alt="">
+            
+        
+            <div class="container-fluid p-0 videos-row">
+                <h2>Populares na Netflix</h2>
+                <div class="carousel vertical">
+
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card1.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card14.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card2.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card15.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card3.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card16.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card4.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card17.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card5.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card18.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card6.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card19.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card7.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card20.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card8.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card21.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card9.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card22.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card10.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card23.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card11.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="movies">
-                        <img src="./img/card24.jpg" alt="">
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card12.jpg" alt="">
+                        </a>
                     </div>
+
+                </div>
+
+                
+
+
+            </div>
+
+            <div class="container-fluid p-0 videos-row">
+                <h2>Populares na Netflix</h2>
+                <div class="carousel vertical">
+
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card13.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card14.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card15.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card16.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card17.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card18.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card19.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card20.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card21.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card22.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card23.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="">
+                            <img src="./img/card24.jpg" alt="">
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="footer">
 
-            </div>
         </div>
     </main>
 
 
-
-
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        const carousels = document.querySelectorAll('.carousel')
+    
+        carousels.forEach(carousel => {
+            new Flickity(carousel, {
+                cellAlign: 'center',
+                groupCells: true,
+                wrapAround: false,
+                freeScroll: false,
+                groupCells: '100%'
+            });
+        });
+    </script>
 </body>
-<script src="./js/script.js"></script>
 
 </html>
