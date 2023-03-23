@@ -262,20 +262,3 @@ main {
   font-size: 80px;
   color: white;
 }
-
-.flickity-button {
-  background: transparent;
-}
-/* big previous & next buttons */
-.flickity-prev-next-button {
-  width: 100px;
-  height: 100px;
-}
-/* icon color */
-.flickity-button-icon {
-  fill: white;
-}
-/* hide disabled button */
-.flickity-button:disabled {
-  display: none;
-}
