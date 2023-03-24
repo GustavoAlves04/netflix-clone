@@ -263,6 +263,91 @@ main {
   color: white;
 }
 
+@media only screen and (max-width: 500px){
+  .carousel-cell{
+    width: 40%;
+  }
+  .flickity-prev-next-button{
+    top: 50%;
+    width: 8%;
+    height: 100%;
+    border-radius: 0;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .flickity-page-dots{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  .carousel-cell{
+    width: 28%;
+  }
+  .flickity-prev-next-button{
+    top: 50%;
+    width: 6%;
+    height: 100%;
+    border-radius: 0;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .flickity-page-dots{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  .carousel-cell{
+    width: 23%;
+  }
+  .flickity-prev-next-button{
+    top: 50%;
+    width: 4%;
+    height: 100%;
+    border-radius: 0;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .carousel:hover .flickity-page-dots{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1100px){
+  .carousel-cell{
+    width: 18%;
+  }
+  .flickity-prev-next-button{
+    top: 50%;
+    width: 4%;
+    height: 100%;
+    border-radius: 0;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .carousel:hover .flickity-page-dots{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+  .carousel-cell{
+    width: 15%;
+  }
+  .flickity-prev-next-button{
+    top: 50%;
+    width: 4%;
+    height: 100%;
+    border-radius: 0;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .carousel:hover .flickity-page-dots{
+    display: block;
+  }
+}
+
 .flickity-prev-next-button{
   background: #141414;
   border: none;
