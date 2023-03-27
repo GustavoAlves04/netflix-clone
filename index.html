@@ -18,7 +18,7 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="shortcut icon" href="./img/netflix.png" type="image/x-icon">
     <title>Netflix | Clone</title>
 </head>
 
@@ -62,7 +62,7 @@
                 <div class="buttons-principal">
                     <a href="https://www.netflix.com/br/title/81308434"><button><i class='fas fa-play'></i>
                             Assistir</button></a>
-                    <button><i class='fas fa-plus'></i> Minha Lista</button>
+                    <button id="btn"><i class='fas fa-plus'></i> Minha Lista</button>
                 </div>
                 <div class="container">
                     <div class="texth1">
@@ -93,7 +93,7 @@
 
 
 
-            <div class="container-fluid p-0 videos-row">
+            <div class="videos-row">
                 <h2>Populares na Netflix</h2>
                 <div class="carousel vertical">
 
@@ -162,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid p-0 videos-row">
+            <div class="videos-row">
                 <h2>Tendência agora</h2>
                 <div class="carousel vertical">
 
@@ -230,7 +230,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid p-0 videos-row">
+            <div class="videos-row">
                 <h2>Filmes de Terror</h2>
                 <div class="carousel vertical">
 
@@ -298,7 +298,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid p-0 videos-row" id="infantil">
+            <div class="videos-row" id="infantil">
                 <h2>Filmes Infantil</h2>
                 <div class="carousel vertical">
 
@@ -366,7 +366,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid p-0 videos-row" id="lancamentos">
+            <div class="videos-row" id="lancamentos">
                 <h2>Lançamentos</h2>
                 <div class="carousel vertical">
 
@@ -434,14 +434,12 @@
                 </div>
             </div>
 
-
         </div>
     </main>
 
 
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="/path/to/flickity.pkgd.min.js"></script>
     <script>
         const carousels = document.querySelectorAll('.carousel')
 
