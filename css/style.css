@@ -74,7 +74,13 @@ header {
   cursor: pointer;
   color: #bdbdbd;
 }
-
+#menu-icone{
+  font-size: 1.625rem;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
 .user {
   display: flex;
   align-items: center;
@@ -417,4 +423,33 @@ main {
   background: #aaa;
   border-radius: 0%;
   cursor: pointer;
+}
+
+@media (max-width: 800px){
+  #menu-icone{
+    display: initial;
+  }
+  .navlist-right{
+    position: absolute;
+    top: -700px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    transition: all .30s;
+  }
+  .navlist-right a{
+      display: block;
+      padding: 1.1rem;
+      margin: 1.3rem;
+      border-left: 2px solid var(--text-color);
+  }
+  .navlist-right a:hover{
+      background: var(--main-color);
+  }
+  .navlist-right a::after{
+      display: none;
+  }
+
 }
