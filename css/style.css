@@ -426,9 +426,6 @@ main {
 }
 
 @media (max-width: 800px){
-  #menu-icone{
-    display: initial;
-  }
   .navlist-right{
     position: absolute;
     top: -700px;
@@ -452,4 +449,17 @@ main {
       display: none;
   }
 
+}
+
+@media (max-width: 610px){
+  .logo img {
+    width: 120px;
+    height: 34px;
+  }  
+  .navlist a{
+    padding: 5px;
+    font-size: 14px;
+    line-height: 67px;
+    transition: all .3s ease;
+  }
 }
