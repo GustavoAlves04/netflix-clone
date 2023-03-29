@@ -435,7 +435,7 @@ main {
     left: 0;
     right: 0;
     flex-direction: column;
-    background: var(--bg-color);
+    background: black;
     text-align: left;
     transition: all .30s;
   }
@@ -443,10 +443,10 @@ main {
       display: block;
       padding: 1.1rem;
       margin: 1.3rem;
-      border-left: 2px solid var(--text-color);
+      border-left: 2px solid #ffffff;
   }
   .navlist-right a:hover{
-      background: var(--main-color);
+      background: #ffffff;
   }
   .navlist-right a::after{
       display: none;
