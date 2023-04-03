@@ -477,3 +477,23 @@ main {
   }
   
 }
+
+@media (max-width: 425px){
+  .logo img {
+    width: 80px;
+    height: 30px;
+  }  
+  .navlist a{
+    padding: 5px;
+    font-size: 12px;
+    line-height: 60px;
+    transition: all .3s ease;
+  }
+  .simples .estrelado{
+    font-size: 12px;
+  }
+  .buttons-principal button{
+    width: 130px;
+    height: 50px;
+  }
+}
