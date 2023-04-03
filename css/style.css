@@ -197,8 +197,9 @@ main {
 }
 
 .buttons-principal button {
+  width: 150px;
+  height: 50px;
   color: #fff;
-  padding: 0.6rem 2rem;
   margin-right: 0.75rem;
   font-weight: 600;
   border-radius: 0.13rem;
@@ -474,4 +475,5 @@ main {
   .simples .pessoas{
     font-size: 12px;
   }
+  
 }
