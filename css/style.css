@@ -240,7 +240,7 @@ main {
 
 .slider > img {
   flex: 0 0 calc(100% / var(--items-per-screen));
-  max-width: calc(100% / var(--items-per-screen));
+  max-width: calc(80% / var(--items-per-screen));
   aspect-ratio: 16 / 9;
   padding: var(--img-gap);
   border-radius: 1rem;
@@ -251,7 +251,7 @@ main {
   border-radius: 1rem;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: rgba(29, 29, 29, 0.548);
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size);
@@ -277,7 +277,7 @@ main {
 
 .handle:hover,
 .handle:focus {
-  background-color: rgba(255, 255, 255, .5);
+  background: transparent;
 }
 
 .text {
