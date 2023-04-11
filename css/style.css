@@ -360,9 +360,6 @@ main {
   .navlist-right a::after{
       display: none;
   }
-  .videos-row h2{
-    font-size: 16px
-  }
 }
 
 @media (max-width: 610px){
@@ -390,6 +387,18 @@ main {
 }
 
 @media (max-width: 425px){
+  .title{
+    font-size: 1rem;
+  }
+  .progress-item {
+    display: none;
+  }
+  .progress-bar{
+    display: none;
+  }
+  .slider{
+    --items-per-screen: 1;
+  }
   .logo img {
     width: 80px;
     height: 30px;
