@@ -398,6 +398,7 @@ main {
   }
   .slider{
     --items-per-screen: 1;
+    transition: all .3s ease;
   }
   .logo img {
     width: 80px;
@@ -415,5 +416,19 @@ main {
   .buttons-principal button{
     width: 130px;
     height: 50px;
+  }
+}
+@media (max-width: 375px){
+  .logo img{
+    width: 65px;
+    height: 30px;
+    margin-left: 15px;
+  }
+  .buttons-principal{
+    display: flex;
+  }
+  .buttons-principal button{
+    width: 100px;
+    font-size: 0.8rem;
   }
 }
