@@ -2,215 +2,215 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="shortcut icon" href="./img/netflix.png" type="image/x-icon">
-    <title>Netflix | Clone</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="shortcut icon" href="./img/netflix.png" type="image/x-icon">
+  <title>Netflix | Clone</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">
-            <a href="https://www.netflix.com/br/"><img src="./img/logo.png" alt="logo-netflix"></a>
+  <header>
+    <div class="logo">
+      <a href="https://www.netflix.com/br/"><img src="./img/logo.png" alt="logo-netflix"></a>
+    </div>
+    <div class="hero">
+      <nav class="navlist">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="https://www.netflix.com/br/browse/genre/83" target="_blank">Série</a></li>
+          <li><a href="https://www.netflix.com/br/browse/genre/34399" target="_blank">Filmes</a></li>
+          <li><a href="#lancamentos">Recentes</a></li>
+          <li><a href="#">Minha lista</a></li>
+        </ul>
+      </nav>
+      <div class="bx bx-menu" id="menu-icone"></div>
+      <nav class="navlist-right">
+
+        <ul>
+          <li><i class="fas fa-search"></i></li>
+          <li><a href="#infantil">Infantil</a></li>
+          <li><i class="fas fa-bell"></i></li>
+          <li class="user">
+            <img src="./img/user.png" alt="">
+            <i class="fas fa-sort-down"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="principal">
+      <div class="container-total">
+        <div class="img-principal">
+          <img src="./img/logofilme.png" alt="">
         </div>
-        <div class="hero">
-            <nav class="navlist">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="https://www.netflix.com/br/browse/genre/83" target="_blank">Série</a></li>
-                    <li><a href="https://www.netflix.com/br/browse/genre/34399" target="_blank">Filmes</a></li>
-                    <li><a href="#lancamentos">Recentes</a></li>
-                    <li><a href="#">Minha lista</a></li>
-                </ul>
-            </nav>
-            <div class="bx bx-menu" id="menu-icone"></div>
-            <nav class="navlist-right">
-                
-                <ul>
-                    <li><i class="fas fa-search"></i></li>
-                    <li><a href="#infantil">Infantil</a></li>
-                    <li><i class="fas fa-bell"></i></li>
-                    <li class="user">
-                        <img src="./img/user.png" alt="">
-                        <i class="fas fa-sort-down"></i>
-                    </li>
-                </ul>
-            </nav>
+        <div class="buttons-principal">
+          <a href="https://www.netflix.com/br/title/81308434"><button><i class='fas fa-play'></i>
+              Assistir</button></a>
+          <button id="btn"><i class='fas fa-plus'></i> Minha Lista</button>
         </div>
-    </header>
-
-
-    <main>
-        <div class="principal">
-            <div class="container-total">
-                <div class="img-principal">
-                    <img src="./img/logofilme.png" alt="">
-                </div>
-                <div class="buttons-principal">
-                    <a href="https://www.netflix.com/br/title/81308434"><button><i class='fas fa-play'></i>
-                            Assistir</button></a>
-                    <button id="btn"><i class='fas fa-plus'></i> Minha Lista</button>
-                </div>
-                <div class="container-all">
-                    <div class="texth1">
-                        <h1>Um Homem de Ação</h1>
-                    </div>
-                    <div class="spans">
-                        <span class="spans-container">2022</span>
-                        <span class="span-vazio">|</span>
-                        <span class="span-border">A12</span>
-                        <span class="span-vazio">|</span>
-                        <span class="spans-container">1h 51min</span>
-                        <span class="span-vazio">|</span>
-                        <a href="https://www.netflix.com/br/browse/genre/5763" target="_blank"><span
-                                class="spans-container">Dramas</span></a>
-                    </div>
-                    <div class="paragrafo">
-                        <p class="descricao">Neste drama inspirado na vida de Lucio Urtubia, um anarquista coloca em
-                            prática uma ambiciosa operação de falsificação que tem como alvo um dos maiores bancos do
-                            mundo.
-                        </p>
-                        <div class="simples">
-                            <p class="estrelado">Estrelando:</p>
-                            <p class="pessoas">Juan José Ballesta,Liah O'Prey,Luis Callejo</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="container-all">
+          <div class="texth1">
+            <h1>Um Homem de Ação</h1>
+          </div>
+          <div class="spans">
+            <span class="spans-container">2022</span>
+            <span class="span-vazio">|</span>
+            <span class="span-border">A12</span>
+            <span class="span-vazio">|</span>
+            <span class="spans-container">1h 51min</span>
+            <span class="span-vazio">|</span>
+            <a href="https://www.netflix.com/br/browse/genre/5763" target="_blank"><span
+                class="spans-container">Dramas</span></a>
+          </div>
+          <div class="paragrafo">
+            <p class="descricao">Neste drama inspirado na vida de Lucio Urtubia, um anarquista coloca em
+              prática uma ambiciosa operação de falsificação que tem como alvo um dos maiores bancos do
+              mundo.
+            </p>
+            <div class="simples">
+              <p class="estrelado">Estrelando:</p>
+              <p class="pessoas">Juan José Ballesta,Liah O'Prey,Luis Callejo</p>
             </div>
-
-            <div class="row">
-                <div class="header">
-                  <h3 class="title">Disponiveis na Netflix</h3>
-                  <div class="progress-bar"></div>
-                </div>
-                <div class="container">
-                  <button class="handle left-handle">
-                    <div class="text">&#8249;</div>
-                  </button>
-                  <div class="slider">
-                    <img src="./img/card1.jpg">
-                    <img src="./img/card2.jpg">
-                    <img src="./img/card3.jpg">
-                    <img src="./img/card4.jpg">
-                    <img src="./img/card5.jpg">
-                    <img src="./img/card6.jpg">
-                    <img src="./img/card7.jpg">
-                    <img src="./img/card8.jpg">
-                    <img src="./img/card9.jpg">
-                    <img src="./img/card10.jpg">
-                    <img src="./img/card11.jpg">
-                    <img src="./img/card12.jpg">
-                  </div>
-                  <button class="handle right-handle">
-                    <div class="text">&#8250;</div>
-                  </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="header">
-                  <h3 class="title">Assista agora</h3>
-                  <div class="progress-bar"></div>
-                </div>
-                <div class="container">
-                  <button class="handle left-handle">
-                    <div class="text">&#8249;</div>
-                  </button>
-                  <div class="slider">
-                    <img src="./img/card13.jpg">
-                    <img src="./img/card14.jpg">
-                    <img src="./img/card15.jpg">
-                    <img src="./img/card16.jpg">
-                    <img src="./img/card17.jpg">
-                    <img src="./img/card18.jpg">
-                    <img src="./img/card19.jpg">
-                    <img src="./img/card20.jpg">
-                    <img src="./img/card21.jpg">
-                    <img src="./img/card22.jpg">
-                    <img src="./img/card23.jpg">
-                    <img src="./img/card24.jpg">
-                  </div>
-                  <button class="handle right-handle">
-                    <div class="text">&#8250;</div>
-                  </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="header">
-                  <h3 class="title">Infantil</h3>
-                  <div class="progress-bar"></div>
-                </div>
-                <div class="container">
-                  <button class="handle left-handle">
-                    <div class="text">&#8249;</div>
-                  </button>
-                  <div class="slider">
-                    <img src="./img/cardi1.jpg">
-                    <img src="./img/cardi2.jpg">
-                    <img src="./img/cardi3.jpg">
-                    <img src="./img/cardi4.jpg">
-                    <img src="./img/cardi5.jpg">
-                    <img src="./img/cardi6.jpg">
-                    <img src="./img/cardi7.jpg">
-                    <img src="./img/cardi8.jpg">
-                    <img src="./img/cardi9.jpg">
-                    <img src="./img/cardi10.jpg">
-                    <img src="./img/cardi11.jpg">
-                    <img src="./img/cardi12.jpg">
-                  </div>
-                  <button class="handle right-handle">
-                    <div class="text">&#8250;</div>
-                  </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="header">
-                  <h3 class="title">Terror</h3>
-                  <div class="progress-bar"></div>
-                </div>
-                <div class="container">
-                  <button class="handle left-handle">
-                    <div class="text">&#8249;</div>
-                  </button>
-                  <div class="slider">
-                    <img src="./img/cardt1.jpg">
-                    <img src="./img/cardt2.jpg">
-                    <img src="./img/cardt3.jpg">
-                    <img src="./img/cardt4.jpg">
-                    <img src="./img/cardt5.jpg">
-                    <img src="./img/cardt6.jpg">
-                    <img src="./img/cardt7.jpg">
-                    <img src="./img/cardt8.jpg">
-                    <img src="./img/cardt9.jpg">
-                    <img src="./img/cardt10.jpg">
-                    <img src="./img/cardt11.jpg">
-                    <img src="./img/card21.jpg">
-                  </div>
-                  <button class="handle right-handle">
-                    <div class="text">&#8250;</div>
-                  </button>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </main>
+      </div>
+
+      <div class="row">
+        <div class="header">
+          <h3 class="title">Disponiveis na Netflix</h3>
+          <div class="progress-bar"></div>
+        </div>
+        <div class="container">
+          <button class="handle left-handle">
+            <div class="text">&#8249;</div>
+          </button>
+          <div class="slider">
+            <img src="./img/card1.jpg">
+            <img src="./img/card2.jpg">
+            <img src="./img/card3.jpg">
+            <img src="./img/card4.jpg">
+            <img src="./img/card5.jpg">
+            <img src="./img/card6.jpg">
+            <img src="./img/card7.jpg">
+            <img src="./img/card8.jpg">
+            <img src="./img/card9.jpg">
+            <img src="./img/card10.jpg">
+            <img src="./img/card11.jpg">
+            <img src="./img/card12.jpg">
+          </div>
+          <button class="handle right-handle">
+            <div class="text">&#8250;</div>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="header">
+          <h3 class="title">Assista agora</h3>
+          <div class="progress-bar"></div>
+        </div>
+        <div class="container">
+          <button class="handle left-handle">
+            <div class="text">&#8249;</div>
+          </button>
+          <div class="slider">
+            <img src="./img/card13.jpg">
+            <img src="./img/card14.jpg">
+            <img src="./img/card15.jpg">
+            <img src="./img/card16.jpg">
+            <img src="./img/card17.jpg">
+            <img src="./img/card18.jpg">
+            <img src="./img/card19.jpg">
+            <img src="./img/card20.jpg">
+            <img src="./img/card21.jpg">
+            <img src="./img/card22.jpg">
+            <img src="./img/card23.jpg">
+            <img src="./img/card24.jpg">
+          </div>
+          <button class="handle right-handle">
+            <div class="text">&#8250;</div>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="header">
+          <h3 class="title">Infantil</h3>
+          <div class="progress-bar"></div>
+        </div>
+        <div class="container">
+          <button class="handle left-handle">
+            <div class="text">&#8249;</div>
+          </button>
+          <div class="slider">
+            <img src="./img/cardi1.jpg">
+            <img src="./img/cardi2.jpg">
+            <img src="./img/cardi3.jpg">
+            <img src="./img/cardi4.jpg">
+            <img src="./img/cardi5.jpg">
+            <img src="./img/cardi6.jpg">
+            <img src="./img/cardi7.jpg">
+            <img src="./img/cardi8.jpg">
+            <img src="./img/cardi9.jpg">
+            <img src="./img/cardi10.jpg">
+            <img src="./img/cardi11.jpg">
+            <img src="./img/cardi12.jpg">
+          </div>
+          <button class="handle right-handle">
+            <div class="text">&#8250;</div>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="header">
+          <h3 class="title">Terror</h3>
+          <div class="progress-bar"></div>
+        </div>
+        <div class="container">
+          <button class="handle left-handle">
+            <div class="text">&#8249;</div>
+          </button>
+          <div class="slider">
+            <img src="./img/cardt1.jpg">
+            <img src="./img/cardt2.jpg">
+            <img src="./img/cardt3.jpg">
+            <img src="./img/cardt4.jpg">
+            <img src="./img/cardt5.jpg">
+            <img src="./img/cardt6.jpg">
+            <img src="./img/cardt7.jpg">
+            <img src="./img/cardt8.jpg">
+            <img src="./img/cardt9.jpg">
+            <img src="./img/cardt10.jpg">
+            <img src="./img/cardt11.jpg">
+            <img src="./img/card21.jpg">
+          </div>
+          <button class="handle right-handle">
+            <div class="text">&#8250;</div>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
 
 
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
