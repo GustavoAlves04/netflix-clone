@@ -11,6 +11,7 @@
 }
 body {
   background-color: black;
+  
 }
 
 header {
@@ -103,6 +104,16 @@ header {
 }
 
 .container-principal {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0.897) 100%
+  ),
+  url(../img/principal.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -116,10 +127,7 @@ header {
   margin: 0 auto;
   height: 100%;
   margin-top: 150px;
-}
-
-.container-total {
-  padding: 0 3rem;
+  
 }
 
 .container-all {
@@ -221,7 +229,6 @@ header {
   justify-content: center;
   overflow: hidden;
 }
-
 .slider {
   --items-per-screen: 4;
   --slider-index: 0;
@@ -359,12 +366,22 @@ header {
     width: 120px;
     height: 34px;
   }
+  .img-principal img{
+    width: 80%;
+  }
+  .buttons-principal{
+    width: 100%;
+  }
   .navlist a {
     padding: 5px;
     font-size: 14px;
     line-height: 67px;
     transition: all 0.3s ease;
   }
+  .container-principal{
+    height: 35vh;
+  }
+  
 }
 
 @media (max-width: 475px) {
@@ -381,9 +398,6 @@ header {
 }
 
 @media (max-width: 425px) {
-  .container-principal{
-    height: 90vh;
-  }
   .title {
     font-size: 1rem;
   }
@@ -421,13 +435,6 @@ header {
     display: flex;
   }
   .buttons-principal button {
-    width: 100px;
     font-size: 0.8rem;
-  }
-}
-@media (max-width: 320px) {
-  .container-all {
-    font-size: 10px;
-    width: 200px;
   }
 }
